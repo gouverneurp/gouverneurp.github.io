@@ -1,1 +1,1137 @@
-Hello world
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Philip Gouverneur</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.2/dist/simple-notify.min.css" />
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YQZ58PWJQ3"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-YQZ58PWJQ3');
+</script>
+
+<body onload="remove_loading_spinner();">
+
+    <!-- Loading spinner -->
+    <div class="loading-background" id="loading-background">
+        <div class="fulfilling-square-spinner">
+            <div class="spinner-inner"></div>
+        </div>
+    </div>
+
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Publications</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Photographs</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div class="header">
+            <h1>
+                <span class="site-title">Philip Gouverneur</span>
+                <span class="site-description">Data Scientist | Researcher | ML Engineer</span>
+            </h1>
+            <div class="header-icons">
+                <a aria-label="Send Email" href="mailto:philipgouverneur@gmx.de" target="_blank"><i
+                        class="icon fa fa-envelope"></i>
+                </a>
+
+                <a aria-label="Google Scholar" target="_blank"
+                    href="https://scholar.google.de/citations?user=VsHUNwgAAAAJ">
+                    <i class="icon ai ai-google-scholar ai-2x ai-pull-left"></i>
+                </a>
+
+                <a aria-label="Orcid" target="_blank" href="https://orcid.org/0000-0001-8610-2291">
+                    <i class="icon ai ai-orcid ai-2x ai-pull-left" aria-hidden="true"></i>
+                </a>
+
+                <a aria-label="My LinkedIn Profile" target="_blank"
+                    href="https://www.linkedin.com/in/philip-gouverneur/">
+                    <i class="icon fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+
+                <!--
+                    <a aria-label="Web of science" target="_blank" href="https://www.webofscience.com/wos/author/record/HNI-2440-2023">
+                        <i class="icon ai ai-clarivate ai-2x ai-pull-left" aria-hidden="true"></i>
+                    </a>
+
+                    <a aria-label="ResearchGate" target="_blank" href="https://www.researchgate.net/profile/Philip-Gouverneur/">
+                        <i class="icon ai ai-researchgate ai-2x ai-pull-left" aria-hidden="true"></i>
+                    </a>
+                -->
+
+                <a aria-label="My Résumé" target="_blank" href="./assets/cv.pdf">
+                    <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <center>
+            <div class="container hiddenScroll">
+                <h2 class="heading">About Me</h2>
+                <div class="col-md-12">
+                    <div class="col-md-3">
+                        <picture>
+                            <source type="image/webp" srcset="./images/cv_photo.jpg" alt="Me" width="100%"
+                                style="border-radius: 50%" />
+                            <div class="portrait">
+                                <img src="./images/cv_photo.jpg" alt="Me" />
+                            </div>
+                        </picture>
+                    </div>
+                    <div class="col-md-9">
+                        <p class="about-text">
+                            I'm Philip Gouverneur, a PhD student in Computer Science at the University of Lübeck with a
+                            strong focus on Machine Learning (ML) and its applications, especially in time series
+                            analysis and artificial intelligence. My research journey has also led me to explore the
+                            exciting field of Explainable AI (XAI). I've had the privilege of applying these concepts to
+                            real-world projects. One notable project is my involvement in a BMBF-funded initiative
+                            called PainMonit, which focuses on automated pain detection based on physiological sensing
+                            modalities. The results of my research have been reported in several publications, mainly in
+                            the journal MDPI. In my spare time, I enjoy photography, skiing, and playing the guitar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="March 2019 - Now" class="hiddenScroll" style="--order: 1;">
+                <h3>University of Lübeck</h3>
+                <h4>PhD student</h4>
+                <p>
+                    Currently, I am a PhD student at the University of Lübeck, studying computer science with a focus on
+                    medical applications. I have been mainly working on a BMBF project called PainMonit with the aim of
+                    building automated pain recognition systems based on physiological sensor modalities.
+                </p>
+            </div>
+
+            <div data-date="October 2016 - March 2019" class="hiddenScroll" style="--order: 2;">
+                <h3>University of Siegen</h3>
+                <h4>Master of Science</h4>
+                <p><b>Computer Science with Medical Application</b></p>
+                <p>Thesis title: "Attention-based Approaches for Interpretability of CNN Models for Human Activity
+                    Recognition"</p>
+            </div>
+
+            <div data-date="October 2016 - March 2019" class="hiddenScroll" style="--order: 3;">
+                <h3>University of Siegen</h3>
+                <h4>Student Assistant</h4>
+                <p>
+                    I worked as a student assistant in the Pattern Recognition Group at the University of Siegen.
+                    My work included the lead of the WP6 "Data Fusion, Analytics and other Services", organisation and
+                    implementation of a DSS in the
+                    frame of the Horizon 2020 project "my-AHA".
+                </p>
+            </div>
+
+            <div data-date="October 2013 - October 2016" class="hiddenScroll" style="--order: 4;">
+                <h3>University of Siegen</h3>
+                <h4>Bachelor of Science</h4>
+                <p><b>Computer Science with Medical Application</b></p>
+                <p>Thesis title: "Classification of physiological data for emotion recognition"</p>
+
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <!-- Publications -->
+    <div id="education">
+        <h2 class="heading">Selected Publications</h2>
+
+        <!-- Start publication-block -->
+        <div class="education-block shadow-large" style="--order: 1;">
+            <span class="education-date">9 February 2023</span>
+            <div class="education-container">
+                <h3>Explainable Artificial Intelligence (XAI) in Pain Research: Understanding the Role of
+                    Electrodermal Activity for Automated Pain Recognition</h3>
+                <h4>MDPI Sensors</h4>
+                <div class="publication-image-container">
+                    <img class="publication-image" width="300" height="300" src="images/publications/xai.png"
+                        style="border-radius: 3px" />
+                </div>
+                <div class="publication-text">
+                    Artificial intelligence and especially deep learning methods have achieved outstanding
+                    results for various applications in the past few years. Pain recognition is one of them,
+                    as various models have been proposed to replace the previous gold standard with an
+                    automated and objective assessment. While the accuracy of such models could be increased
+                    incrementally, the understandability and transparency of these systems have not been the
+                    main focus of the research community thus far. Thus, in this work, several outcomes and
+                    insights of explainable artificial intelligence applied to the electrodermal activity
+                    sensor data of the PainMonit and BioVid Heat Pain Database are presented. For this
+                    purpose, the importance of hand-crafted features is evaluated using recursive feature
+                    elimination based on impurity scores in Random Forest (RF) models. Additionally,
+                    Gradient-weighted class activation mapping is applied to highlight the most impactful
+                    features learned by deep learning models. Our studies highlight the following insights:
+                    (1) Very simple hand-crafted features can yield comparative performances to deep
+                    learning models for pain recognition, especially when properly selected with recursive
+                    feature elimination. Thus, the use of complex neural networks should be questioned in
+                    pain recognition, especially considering their computational costs; and (2) both
+                    traditional feature engineering and deep feature learning approaches rely on simple
+                    characteristics of the input time-series data to make their decision in the context of
+                    automated pain recognition.
+                </div>
+                <a href="https://www.mdpi.com/1424-8220/23/4/1959" target="_blank" class="btn-rounded-white">Link</a>
+                <a href="#cite_xai" class="btn-rounded-white modal-button">Cite</a>
+                <a href="https://www.mdpi.com/1424-8220/23/4/1959/pdf?version=1676027846" class="btn-rounded-white">
+                    <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+                </a>
+
+                <!-- Cite Modal -->
+                <div id="cite_xai" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>Cite: Explainable Artificial Intelligence (XAI) in Pain Research: Understanding the Role
+                                of Electrodermal Activity for Automated Pain Recognition</h2>
+                        </div>
+                        <div class="modal-body">@article{gouverneur2023explainable,
+    title        = {Explainable artificial intelligence (XAI) in pain research: Understanding the role of electrodermal activity for automated pain recognition},
+    author       = {Gouverneur, Philip and Li, Fr{\'e}d{\'e}ric and Shirahama, Kimiaki and Luebke, Luisa and Adamczyk, Wac{\l}aw M and Szikszay, Tibor M and Luedtke, Kerstin and Grzegorzek, Marcin},
+    journal      = {Sensors},
+    volume       = {23},
+    number       = {4},
+    pages        = {1959},
+    year         = {2023},
+    publisher    = {MDPI}
+}
+                        </div>
+                        <div class="modal-footer">
+                            <a onclick="copyCitation(this)" class="btn-rounded-blue">Copy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End publication-block -->
+
+        <!-- Start publication-block -->
+        <div class="education-block shadow-large" style="--order: 2;">
+            <span class="education-date">15 July 2021</span>
+            <div class="education-container">
+                <h3>
+                    Comparison of Feature Extraction Methods for Physiological Signals for Heat-Based Pain Recognition
+                </h3>
+                <h4>MDPI Sensors</h4>
+
+                <div class="publication-image-container">
+                    <img class="publication-image" width="300" height="300" src="images/publications/comparison.png"
+                        style="border-radius: 3px" />
+                </div>
+                <div class="publication-text">
+                    While even the most common definition of pain is under debate, pain assessment has remained the
+                    same for decades. But the paramount importance of precise pain management for successful
+                    healthcare has encouraged initiatives to improve the way pain is assessed. Recent approaches
+                    have proposed automatic pain evaluation systems using machine learning models trained with data
+                    coming from behavioural or physiological sensors. Although yielding promising results, machine
+                    learning studies for sensor-based pain recognition remain scattered and not necessarily easy to
+                    compare to each other. In particular, the important process of extracting features is usually
+                    optimised towards specific datasets. We thus introduce a comparison of feature extraction
+                    methods for pain recognition based on physiological sensors in this paper. In addition, the
+                    PainMonit Database (PMDB), a new dataset including both objective and subjective annotations for
+                    heat-induced pain in 52 subjects, is introduced. In total, five different approaches, including
+                    techniques based on feature engineering and feature learning with deep learning, are evaluated on
+                    the BioVid and PMDB datasets. Our studies highlight the following insights: (1) Simple feature
+                    engineering approaches can still compete with deep learning approaches in terms of performance.
+                    (2) More complex deep learning architectures do not yield better performance compared to simpler
+                    ones. (3) Subjective self-reports by subjects can be used instead of objective temperature-based
+                    annotations to build a robust pain recognition system.
+                </div>
+                <a href="https://www.mdpi.com/1424-8220/21/14/4838" target="_blank" class="btn-rounded-white">Link</a>
+                <a href="#cite_comparison" class="btn-rounded-white modal-button">Cite</a>
+                <a href="https://www.mdpi.com/1424-8220/21/14/4838/pdf?version=1627019035" class="btn-rounded-white">
+                    <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+                </a>
+
+                <!-- Cite Modal -->
+                <div id="cite_comparison" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>Comparison of Feature Extraction Methods for Physiological Signals for Heat-Based Pain
+                                Recognition</h2>
+                        </div>
+                        <div class="modal-body">@article{gouverneur2021comparison,
+    title={Comparison of feature extraction methods for physiological signals for heat-based pain recognition},
+    author={Gouverneur, Philip and Li, Fr{\'e}d{\'e}ric and Adamczyk, Wac{\l}aw M and Szikszay, Tibor M and Luedtke, Kerstin and Grzegorzek, Marcin},
+    journal={Sensors},
+    volume={21},
+    number={14},
+    pages={4838},
+    year={2021},
+    publisher={MDPI}
+}
+                        </div>
+                        <div class="modal-footer">
+                            <a onclick="copyCitation(this)" class="btn-rounded-blue">Copy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End publication-block -->
+
+        <h2 class="heading" style="margin-top: 50px;">All Publications</h2>
+
+        <div class="container" align="justify">
+
+            <!-- Start publications-->
+
+            <!-- Publication List 2023-->
+            <h3>2023</h3>
+            <ul-pubs>
+                <!-- Publication -->
+                <li-pubs>
+                    <b>
+                        Explainable Artificial Intelligence (XAI) in Pain Research: Understanding the Role of
+                        Electrodermal Activity for Automated Pain Recognition</b>
+                    <div>
+                        <i>Sensors</i>, 23(4), 1959.
+                    </div>
+                    <div>
+                        <a href="https://www.mdpi.com/1424-8220/23/4/1959" target="_blank"
+                            class="btn-rounded-blue">Link</a>
+                        <a href="#cite_xai" class="btn-rounded-blue modal-button">Cite</a>
+                        <a href="https://www.mdpi.com/1424-8220/23/4/1959/pdf?version=1676027846"
+                            class="btn-rounded-blue">
+                            <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li-pubs><br>
+                <!-- Publication -->
+                <li-pubs>
+                    <b>
+                        Objective Measurement of Subjective Pain Perception with Autonomic Body Reactions in Healthy
+                        Subjects and Chronic Back Pain Patients: An Experimental Heat Pain Study</b>
+                    <div>
+                        <i>Sensors</i>, 23(19), 8231.
+                    </div>
+                    <div>
+                        <a href="https://www.mdpi.com/1424-8220/23/19/8231" target="_blank"
+                            class="btn-rounded-blue">Link</a>
+                        <a href="#cite_chron" class="btn-rounded-blue modal-button">Cite</a>
+                        <a href="https://www.mdpi.com/1424-8220/23/19/8231/pdf?version=1696325521"
+                            class="btn-rounded-blue">
+                            <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+                        </a>
+                        <!-- Cite Modal -->
+                        <div id="cite_chron" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">&times;</span>
+                                    <h2>Cite: Objective Measurement of Subjective Pain Perception with Autonomic Body
+                                        Reactions in Healthy Subjects and Chronic Back Pain Patients: An Experimental
+                                        Heat Pain Study</h2>
+                                </div>
+                                <div class="modal-body">@article{luebke2023objective,
+    title={Objective Measurement of Subjective Pain Perception with Autonomic Body Reactions in Healthy Subjects and Chronic Back Pain Patients: An Experimental Heat Pain Study},
+    author={Luebke, Luisa and Gouverneur, Philip and Szikszay, Tibor M and Adamczyk, Wac{\l}aw M and Luedtke, Kerstin and Grzegorzek, Marcin},
+    journal={Sensors},
+    volume={23},
+    number={19},
+    pages={8231},
+    year={2023},
+    publisher={MDPI}
+}</div>
+                                <div class="modal-footer">
+                                    <a onclick="copyCitation(this)" class="btn-rounded-blue">Copy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li-pubs><br>
+                <!-- Publication -->
+                <li-pubs>
+                    <b>
+                        Psychological Mechanisms of Offset Analgesia: The Effect of Expectancy Manipulation</b>
+                    <div>
+                        <i>PLOS ONE</i>, 18(1), 1-16.
+                    </div>
+                    <div>
+                        <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0280579"
+                            target="_blank" class="btn-rounded-blue modal-button">Link</a>
+                        <a href="#cite_psychological" class="btn-rounded-blue modal-button">Cite</a>
+                        <a href="https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0280579&type=printable"
+                            class="btn-rounded-blue">
+                            <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+                        </a>
+                        <!-- Cite Modal -->
+                        <div id="cite_psychological" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">&times;</span>
+                                    <h2>Cite: Psychological Mechanisms of Offset Analgesia: The Effect of Expectancy
+                                        Manipulation</h2>
+                                </div>
+                                <div class="modal-body">@article{szikszay2023psychological,
+    title={Psychological mechanisms of offset analgesia: The effect of expectancy manipulation},
+    author={Szikszay, Tibor M and Adamczyk, Waclaw M and Panskus, Janina and Heimes, Lotte and David, Carolin and Gouverneur, Philip and Luedtke, Kerstin},
+    journal={PloS one},
+    volume={18},
+    number={1},
+    pages={e0280579},
+    year={2023},
+    publisher={Public Library of Science San Francisco, CA USA}
+}
+                                </div>
+                                <div class="modal-footer">
+                                    <a onclick="copyCitation(this)" class="btn-rounded-blue">Copy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li-pubs><br>
+                <!-- Publication -->
+                <li-pubs>
+                    <b>
+                        Differential Effects of Thermal Stimuli in Eliciting Temporal Contrast Enhancement: A
+                        Psychophysical Study</b>
+                    <div>
+                        <i>The Journal of Pain</i>, Elsevier.
+                    </div>
+                    <div>
+                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S1526590023005072"
+                            target="_blank" class="btn-rounded-blue">Link</a>
+                        <a href="#cite_differential" class="btn-rounded-blue modal-button">Cite</a>
+                        <!-- Cite Modal -->
+                        <div id="cite_differential" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">&times;</span>
+                                    <h2>Cite: Differential Effects of Thermal Stimuli in Eliciting Temporal Contrast
+                                        Enhancement: A
+                                        Psychophysical Study</h2>
+                                </div>
+                                <div class="modal-body">@article{luebke2023differential,
+    title={Differential Effects of Thermal Stimuli in Eliciting Temporal Contrast Enhancement: A Psychophysical Study},
+    author={Luebke, Luisa and von Selle, Janne and Adamczyk, Wac{\l}aw M and Knorr, Moritz J and Carvalho, Gabriela F and Gouverneur, Philip and Luedtke, Kerstin and Szikszay, Tibor M},
+    journal={The Journal of Pain},
+    year={2023},
+    publisher={Elsevier}
+}
+                                </div>
+                                <div class="modal-footer">
+                                    <a onclick="copyCitation(this)" class="btn-rounded-blue">Copy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li-pubs><br>
+                <!-- Publication -->
+                <li-pubs>
+                    <b>
+                        Exploring the Benefits of Time Series Data Augmentation for Wearable Human Activity
+                        Recognition</b>
+                    <div>
+                        <i>iWOAR '23</i>, 20, 1-7.
+                    </div>
+                    <div>
+                        <a href="https://dl.acm.org/doi/10.1145/3615834.3615842" target="_blank"
+                            class="btn-rounded-blue">Link</a>
+                        <a href="#cite_augmentation" class="btn-rounded-blue modal-button">Cite</a>
+                        <!-- Cite Modal -->
+                        <div id="cite_augmentation" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">&times;</span>
+                                    <h2>Cite: Exploring the Benefits of Time Series Data Augmentation for Wearable Human
+                                        Activity Recognition</h2>
+                                </div>
+                                <div class="modal-body">@inproceedings{hasan2023exploring,
+    title        = {{Exploring the Benefits of Time Series Data Augmentation for Wearable Human Activity Recognition}},
+    author       = {Hasan, Md Abid and Li, Fr{\'e}d{\'e}ric and Piet, Artur and Gouverneur, Philip and Irshad, Muhammad Tausif and Grzegorzek, Marcin},
+    booktitle    = {Proceedings of the 8th International Workshop on Sensor-Based Activity Recognition and Artificial Intelligence},
+    pages        = {1--7},
+    year         = {2023},
+    publisher    = {Association for Computing Machinery},
+    doi          = {https://doi.org/10.1145/3615834.3615842},
+    note         = {DOI: \href{https://doi.org/10.1145/3615834.3615842}{10.1145/3615834.3615842}},
+    series       = {iWOAR '23},
+}
+                                </div>
+                                <div class="modal-footer">
+                                    <a onclick="copyCitation(this)" class="btn-rounded-blue">Copy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li-pubs><br>
+            </ul-pubs><!-- Publication List 2022-->
+            <h3>2022</h3>
+            <ul-pubs>
+                <!-- Publication -->
+                <li-pubs>
+                    <b>
+                        SenseHunger: Machine Learning Approach to Hunger Detection Using Wearable Sensors</b>
+                    <div>
+                        <i>Sensors</i>, 22(20), 7711.
+                    </div>
+                    <div>
+                        <a href="https://www.mdpi.com/1424-8220/22/20/7711" target="_blank"
+                            class="btn-rounded-blue">Link</a>
+                        <a href="#cite_sensehunger" class="btn-rounded-blue modal-button">Cite</a>
+                        <a href="https://www.mdpi.com/1424-8220/22/20/7711/pdf" class="btn-rounded-blue">
+                            <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+                        </a>
+                        <!-- Cite Modal -->
+                        <div id="cite_sensehunger" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">&times;</span>
+                                    <h2>Cite: SenseHunger: Machine Learning Approach to Hunger Detection Using Wearable
+                                        Sensors</h2>
+                                </div>
+                                <div class="modal-body">@article{irshad2022sensehunger,
+    title={SenseHunger: Machine Learning Approach to Hunger Detection Using Wearable Sensors},
+    author={Irshad, Muhammad Tausif and Nisar, Muhammad Adeel and Huang, Xinyu and Hartz, Jana and Flak, Olaf and Li, Fr{\'e}d{\'e}ric and Gouverneur, Philip and Piet, Artur and Oltmanns, Kerstin M and Grzegorzek, Marcin},
+    journal={Sensors},
+    volume={22},
+    number={20},
+    pages={7711},
+    year={2022},
+    publisher={MDPI}
+}
+                                </div>
+                                <div class="modal-footer">
+                                    <a onclick="copyCitation(this)" class="btn-rounded-blue">Copy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li-pubs><br>
+                <!-- Publication -->
+                <li-pubs>
+                    <b>
+                        Temporal Properties of Pain Contrast Enhancement using Repetitive Stimulation</b>
+                    <div>
+                        <i>European Journal of Pain</i>, Wiley Online Library.
+                    </div>
+                    <div>
+                        <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/ejp.1971" target="_blank"
+                            class="btn-rounded-blue">Link</a>
+                        <a href="#cite_temporal" class="btn-rounded-blue modal-button">Cite</a>
+                        <a href="https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ejp.1971?download=true"
+                            class="btn-rounded-blue">
+                            <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+                        </a>
+                        <!-- Cite Modal -->
+                        <div id="cite_temporal" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">&times;</span>
+                                    <h2>Cite: Temporal Properties of Pain Contrast Enhancement using Repetitive
+                                        Stimulation</h2>
+                                </div>
+                                <div class="modal-body">@article{szikszay2022temporal,
+    title={Temporal properties of pain contrast enhancement using repetitive stimulation},
+    author={Szikszay, Tibor M and Adamczyk, Waclaw M and L{\'e}v{\'e}nez, Juliette LM and Gouverneur, Philip and Luedtke, Kerstin},
+    journal={European Journal of Pain},
+    volume={26},
+    number={7},
+    pages={1437--1447},
+    year={2022},
+    publisher={Wiley Online Library}
+}
+                                </div>
+                                <div class="modal-footer">
+                                    <a onclick="copyCitation(this)" class="btn-rounded-blue">Copy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li-pubs><br>
+                <!-- Publication -->
+                <li-pubs>
+                    <b>
+                        To Calibrate or not to Calibrate? A Methodological Dilemma in Experimental Pain Research</b>
+                    <div>
+                        <i>The Journal of Pain</i>, Elsevier.
+                    </div>
+                    <div>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S1526590022003662" target="_blank"
+                            class="btn-rounded-blue">Link</a>
+                        <a href="#cite_calibrate" class="btn-rounded-blue modal-button">Cite</a>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S1526590022003662/pdfft?md5=160ae2e667132f3f38b2380afda10eb5&pid=1-s2.0-S1526590022003662-main.pdf"
+                            class="btn-rounded-blue">
+                            <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+                        </a>
+                        <!-- Cite Modal -->
+                        <div id="cite_calibrate" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">&times;</span>
+                                    <h2>Cite: To Calibrate or not to Calibrate? A Methodological Dilemma in Experimental
+                                        Pain Research</h2>
+                                </div>
+                                <div class="modal-body">@article{adamczyk2022calibrate,
+    title={To calibrate or not to calibrate? A methodological dilemma in experimental pain research},
+    author={Adamczyk, Waclaw M and Szikszay, Tibor M and Nahman-Averbuch, Hadas and Skalski, Jacek and Nastaj, Jakub and Gouverneur, Philip and Luedtke, Kerstin},
+    journal={The Journal of Pain},
+    volume={23},
+    number={11},
+    pages={1823--1832},
+    year={2022},
+    publisher={Elsevier}
+}
+                                </div>
+                                <div class="modal-footer">
+                                    <a onclick="copyCitation(this)" class="btn-rounded-blue">Copy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li-pubs><br>
+            </ul-pubs><!-- Publication List 2021-->
+            <h3>2021</h3>
+            <ul-pubs>
+                <!-- Publication -->
+                <li-pubs>
+                    <b>
+                        Comparison of Feature Extraction Methods for Physiological Signals for Heat-Based Pain
+                        Recognition</b>
+                    <div>
+                        <i>Sensors</i>, 21(14), 4838.
+                    </div>
+                    <div>
+                        <a href="https://www.mdpi.com/1424-8220/21/14/4838" target="_blank"
+                            class="btn-rounded-blue">Link</a>
+                        <a href="#cite_comparison" class="btn-rounded-blue modal-button">Cite</a>
+                        <a href="https://www.mdpi.com/1424-8220/21/14/4838/pdf" class="btn-rounded-blue">
+                            <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li-pubs><br>
+                <!-- Publication -->
+                <li-pubs>
+                    <b>
+                        Classification of Heat-Induced Pain Using Physiological Signals</b>
+                    <div>
+                        <i>Information Technology in Biomedicine</i>, 239-251.
+                    </div>
+                    <div>
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-030-49666-1_19" target="_blank"
+                            class="btn-rounded-blue">Link</a>
+                        <a href="#cite_classification" class="btn-rounded-blue modal-button">Cite</a>
+                        <!-- Cite Modal -->
+                        <div id="cite_classification" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">&times;</span>
+                                    <h2>Cite: Classification of Heat-Induced Pain Using Physiological Signals</h2>
+                                </div>
+                                <div class="modal-body">@article{gouverneur2021classification,
+    title={Classification of Heat-Induced Pain Using Physiological Signals},
+    author={Gouverneur, Philip J and Li, Fr{\'e}d{\'e}ric and M. Szikszay, Tibor and M. Adamczyk, Waclaw and Luedtke, Kerstin and Grzegorzek, Marcin},
+    journal={Information Technology in Biomedicine},
+    pages={239--251},
+    year={2021},
+    publisher={Springer}
+}
+                                </div>
+                                <div class="modal-footer">
+                                    <a onclick="copyCitation(this)" class="btn-rounded-blue">Copy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li-pubs><br>
+            </ul-pubs><!-- Publication List 2020-->
+            <h3>2020</h3>
+            <ul-pubs>
+                <!-- Publication -->
+                <li-pubs>
+                    <b>
+                        AI Approaches Towards Prechtl’s Assessment of General Movements: A Systematic Literature
+                        Review</b>
+                    <div>
+                        <i>Sensors</i>, 20(18), 5321.
+                    </div>
+                    <div>
+                        <a href="https://www.mdpi.com/1424-8220/20/18/5321" target="_blank"
+                            class="btn-rounded-blue">Link</a>
+                        <a href="#cite_ai" class="btn-rounded-blue modal-button">Cite</a>
+                        <a href="https://www.mdpi.com/1424-8220/20/18/5321/pdf" class="btn-rounded-blue">
+                            <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+                        </a>
+                        <!-- Cite Modal -->
+                        <div id="cite_ai" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">&times;</span>
+                                    <h2>Cite: AI Approaches towards Prechtl’s Assessment of General Movements: A
+                                        Systematic Literature
+                                        Review</h2>
+                                </div>
+                                <div class="modal-body">@article{irshad2020ai,
+    title={Ai approaches towards Prechtl’s assessment of general movements: A systematic literature review},
+    author={Irshad, Muhammad Tausif and Nisar, Muhammad Adeel and Gouverneur, Philip and Rapp, Marion and Grzegorzek, Marcin},
+    journal={Sensors},
+    volume={20},
+    number={18},
+    pages={5321},
+    year={2020},
+    publisher={MDPI}
+}
+                                </div>
+                                <div class="modal-footer">
+                                    <a onclick="copyCitation(this)" class="btn-rounded-blue">Copy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li-pubs><br>
+                <!-- Publication -->
+                <li-pubs>
+                    <b>
+                        My-AHA: Software Platform to Promote Active and Healthy Ageing</b>
+                    <div>
+                        <i>Information</i>, 11(9), 438.
+                    </div>
+                    <div>
+                        <a href="https://www.mdpi.com/2078-2489/11/9/438" target="_blank"
+                            class="btn-rounded-blue">Link</a>
+                        <a href="#cite_myaha" class="btn-rounded-blue modal-button">Cite</a>
+                        <a href="https://www.mdpi.com/2078-2489/11/9/438/pdf" class="btn-rounded-blue">
+                            <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+                        </a>
+                        <!-- Cite Modal -->
+                        <div id="cite_myaha" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">&times;</span>
+                                    <h2>Cite: My-AHA: Software Platform to Promote Active and Healthy Ageing</h2>
+                                </div>
+                                <div class="modal-body">@article{madureira2020my,
+    title={My-AHA: software platform to promote active and healthy ageing},
+    author={Madureira, Pedro and Cardoso, Nuno and Sousa, Filipe and Moreira, Waldir and Oliveira, Antonio-Jr and Bazzani, Marco and Gouverneur, Philip},
+    journal={Information},
+    volume={11},
+    number={9},
+    pages={438},
+    year={2020},
+    publisher={MDPI}
+}
+                                </div>
+                                <div class="modal-footer">
+                                    <a onclick="copyCitation(this)" class="btn-rounded-blue">Copy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li-pubs><br>
+            </ul-pubs><!-- Publication List 2019-->
+            <h3>2019</h3>
+            <ul-pubs>
+                <!-- Publication -->
+                <li-pubs>
+                    <b>
+                        Adaptiv-lernende, technische Alltagsbegleiter im Alter: Abschlussbericht Cognitive Village:
+                        Berichtszeitraum: 01.09. 2015-30.11. 2018</b>
+                    <div>
+                        Project report.
+                    </div>
+                    <div>
+                        <a href="https://www.tib.eu/de/suchen/id/TIBKAT:1677328231/" target="_blank"
+                            class="btn-rounded-blue">Link</a>
+                        <a href="#cite_adaptiv" class="btn-rounded-blue modal-button">Cite</a>
+                        <!-- Cite Modal -->
+                        <div id="cite_adaptiv" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">&times;</span>
+                                    <h2>Cite: Adaptiv-lernende, technische Alltagsbegleiter im Alter: Abschlussbericht
+                                        Cognitive Village:
+                                        Berichtszeitraum: 01.09. 2015-30.11. 2018</h2>
+                                </div>
+                                <div class="modal-body">@book{beer2019adaptiv,
+    title={Adaptiv-lernende, technische Alltagsbegleiter im Alter: Abschlussbericht
+    Cognitive Village: Berichtszeitraum: 01.09. 2015-30.11. 2018},
+    author={Beer, R{\"u}diger and Boden, Alexander and Gethmann, Carl Friedrich and Gouverneur, Philip and Grzegorzek, Marcin and Hoffmann, Raoul and Krauss, Tom and Kurz, Dana and Lauterbach, Christl and M{\"u}ller, Claudia and others},
+    year={2019},
+    publisher={Universit{\"a}t Siegen}
+}
+                                </div>
+                                <div class="modal-footer">
+                                    <a onclick="copyCitation(this)" class="btn-rounded-blue">Copy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li-pubs><br>
+            </ul-pubs><!-- Publication List 2018-->
+            <h3>2018</h3>
+            <ul-pubs>
+                <!-- Publication -->
+                <li-pubs>
+                    <b>
+                        The My Active and Healthy Aging (My-AHA) ICT Platform to Detect and Prevent Frailty in Older
+                        Adults: Randomized Control Trial Design and Protocol</b>
+                    <div>
+                        <i>Alzheimer's & Dementia: Translational Research & Clinical Interventions</i>, 4(1),
+                        252--262.
+                    </div>
+                    <div>
+                        <a href="https://alz-journals.onlinelibrary.wiley.com/doi/full/10.1016/j.trci.2018.06.004"
+                            target="_blank" class="btn-rounded-blue">Link</a>
+                        <a href="#cite_active" class="btn-rounded-blue modal-button">Cite</a>
+                        <a href="https://alz-journals.onlinelibrary.wiley.com/doi/pdfdirect/10.1016/j.trci.2018.06.004"
+                            class="btn-rounded-blue">
+                            <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+                        </a>
+                        <!-- Cite Modal -->
+                        <div id="cite_active" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">&times;</span>
+                                    <h2>Cite: The My Active and Healthy Aging (My-AHA) ICT Platform to Detect and
+                                        Prevent Frailty in Older
+                                        Adults: Randomized Control Trial Design and Protocol</h2>
+                                </div>
+                                <div class="modal-body">@article{summers2018my,
+    title={The My Active and Healthy Aging (My-AHA) ICT platform to detect and prevent frailty in older adults: Randomized control trial design and protocol},
+    author={Summers, Mathew J and Rainero, Innocenzo and Vercelli, Alessandro E and Aumayr, Georg and de Rosario, Helios and M{\"o}nter, Michaela and Kawashima, Ryuta and My-AHA Consortium and Vercelli, AE and Rainero, I and others},
+    journal={Alzheimer's \& Dementia: Translational Research \& Clinical Interventions},
+    volume={4},
+    number={1},
+    pages={252--262},
+    year={2018},
+    publisher={Wiley Online Library}
+}
+                                </div>
+                                <div class="modal-footer">
+                                    <a onclick="copyCitation(this)" class="btn-rounded-blue">Copy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li-pubs><br>
+            </ul-pubs><!-- Publication List 2017-->
+            <h3>2017</h3>
+            <ul-pubs>
+                <!-- Publication -->
+                <li-pubs>
+                    <b>
+                        Classification of Physiological Data for Emotion Recognition</b>
+                    <div>
+                        In <i>Artificial Intelligence and Soft Computing: 16th International Conference, ICAISC 2017,
+                            Zakopane, Poland, June 11-15, 2017, Proceedings, Part I 16</i> (pp. 619-627). Springer
+                        International Publishing.
+                    </div>
+                    <div>
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-319-59063-9_55" target="_blank"
+                            class="btn-rounded-blue">Link</a>
+                        <a href="#cite_emotion" class="btn-rounded-blue modal-button">Cite</a>
+                        <!-- Cite Modal -->
+                        <div id="cite_emotion" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">&times;</span>
+                                    <h2>Cite: Classification of Physiological Data for Emotion Recognition</h2>
+                                </div>
+                                <div class="modal-body">@inproceedings{gouverneur2017classification,
+    title={Classification of physiological data for emotion recognition},
+    author={Gouverneur, Philip and Jaworek-Korjakowska, Joanna and K{\"o}ping, Lukas and Shirahama, Kimiaki and Kleczek, Pawel and Grzegorzek, Marcin},
+    booktitle={Artificial Intelligence and Soft Computing: 16th International Conference, ICAISC 2017, Zakopane, Poland, June 11-15, 2017, Proceedings, Part I 16},
+    pages={619--627},
+    year={2017},
+    organization={Springer}
+}
+                                </div>
+                                <div class="modal-footer">
+                                    <a onclick="copyCitation(this)" class="btn-rounded-blue">Copy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li-pubs><br>
+            </ul-pubs>
+            <!-- end publications -->
+
+            <!-- start publication list as document-->
+            <h3>Publication list</h3>
+
+            <div class="publication-icon">
+                <a aria-label="Publication List" target="_blank" href="./assets/publication_list_gouverneur.pdf"
+                    class="pulication-list-icon">
+                    <i class="icon fa fa-file-text" aria-hidden="true"></i>
+                </a>
+            </div>
+            <!-- end publication list as document-->
+
+            <!-- start citations-->
+            <h3>Citations</h3>
+            <div id="chart"></div>
+            <!-- end citations-->
+        </div>
+    </div>
+    <!-- End publications -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <!-- Start project -->
+                <div class="project shadow-large hiddenScroll" style="--order: 1;">
+                    <div class="project-image">
+                        <img src="images/projects/painmonit.png" width="300" height="300" />
+                    </div>
+                    <div class="project-info">
+                        <h3>Multimodale Plattform zum Schmerzmonitoring in der Physiotherapie (PainMonit)</h3>
+                        <b>BMBF project</b>
+                        <p>
+                            Accurate pain monitoring is of paramount importance in many medical applications. As pain
+                            can be both a symptom and a disease and is also one of the most common reasons why people
+                            seek medical help, the accurate detection of pain plays a crucial role in the day-to-day
+                            history taking in hospitals, clinics and doctors' offices. The aim of PainMonit is to
+                            develop a multimodal sensor-based pain monitoring tool for the holistic monitoring of pain
+                            in a physiotherapeutic treatment context. The aim is to make the otherwise subjective
+                            perception of pain objectively quantifiable and reliable by combining simultaneously
+                            measured physiological data from different sensor-based systems. Different machine learning
+                            approaches were used, comparing traditional learning algorithms with artificial neural
+                            networks. Explainable AI methods helped to better understand the physiological responses to
+                            pain.
+                        </p>
+                        <p>
+                            <b>Tasks:</b> Writing of project proposal; Lead implementation WP1
+                        </p>
+                        <a target="_blank"
+                            href="https://www.uni-luebeck.de/studium/studiengaenge/physiotherapie/forschung/projekte/painmonit.html">View
+                            Project</a>
+                    </div>
+                </div>
+                <!-- End .project -->
+
+                <!-- Start project -->
+                <div class="project shadow-large hiddenScroll" style="--order: 2;">
+                    <div class="project-image">
+                        <img src="images/projects/myAHA.jpg" width="300" height="300" />
+                    </div>
+                    <div class="project-info">
+                        <h3>My Active and Healthy Aging (myAHA)</h3>
+                        <b>Horizon 2020 project</b>
+                        <p>
+                            Interrelated frailties often manifest in older people, encompassing cognitive decline,
+                            physical weakness, depression, anxiety, and poor sleep quality. These conditions contribute
+                            to social isolation and impose a social and economic burden on both ageing adults and
+                            healthcare systems. Detecting these frailties early is crucial for promoting active and
+                            healthy ageing (AHA) and mitigating further decline. The EU-funded my-AHA project aims to
+                            employ advanced analytical concepts to facilitate early and precise health monitoring and
+                            disease prevention through personalised detection, recommendations, feedback and support.
+                            The project seeks to reduce the risk of frailty by enhancing overall wellbeing in ageing
+                            individuals, encompassing aspects such as physical activity, cognitive function,
+                            psychological well-being, nutrition and sleep.
+                        </p>
+                        <p>
+                            <b>Tasks:</b> Lead of WP6 "Data Fusion, Analytics and other Services": organisation and
+                            implementation of a Decision Support System (DSS)
+                        </p>
+                        <a target="_blank" href="https://cordis.europa.eu/project/id/689592">View Project</a>
+                    </div>
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large hiddenScroll" style="--order: 3;">
+                    <div class="project-image">
+                        <img src="images/projects/screenfm.jpg" width="300" height="300" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Sensor platform for automatic detection of fidgety movements (ScreenFM)</h3>
+                        <b>BMBF project</b>
+                        <p>
+                            The ScreenFM study was conducted at the Department of Paediatrics and Adolescent Medicine at
+                            the University Medical Centre Schleswig-Holstein, Campus Lübeck. The researchers involved
+                            are developing and evaluating an app to analyse spontaneous movement patterns, known as
+                            fidgety movements (FM) in babies aged three to five months. The app is intended to improve
+                            screening for developmental abnormalities and enabling paediatricians and paediatricians
+                            across the country to do so. Learning-based AI algorithms have been developed to process the
+                            multimodal sensor signals and automatically assess the babies' fidgety movements to provide
+                            an early assessment.
+                        </p>
+                        <p>
+                            <b>Tasks:</b> Writing of project proposal and report
+                        </p>
+                        <a target="_blank"
+                            href="https://www.uni-luebeck.de/aktuelles/pressemitteilung/artikel/auffaellige-bewegungsmuster-bei-saeuglingen-per-app-erkennen.html">View
+                            Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Photographs</h2>
+        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+            <div class="image-icons active-jump" id="image-helper">
+                <a aria-label="Send Email" target="_blank"><i class="icon fa fa-arrow-left"></i>
+                </a>
+                Grab images!
+            </div>
+            <img class="image active-jump" src="images/slideshow/1.jpg" draggable="false" />
+            <img class="image active-jump" src="images/slideshow/2.jpg" draggable="false" />
+            <img class="image active-jump" src="images/slideshow/3.jpg" draggable="false" />
+            <img class="image active-jump" src="images/slideshow/4.jpg" draggable="false" />
+            <img class="image active-jump" src="images/slideshow/5.jpg" draggable="false" />
+            <img class="image active-jump" src="images/slideshow/6.jpg" draggable="false" />
+            <img class="image active-jump" src="images/slideshow/7.jpg" draggable="false" />
+            <img class="image active-jump" src="images/slideshow/8.jpg" draggable="false" />
+            <img class="image active-jump" src="images/slideshow/9.jpg" draggable="false" />
+            <img class="image active-jump" src="images/slideshow/10.jpg" draggable="false" />
+            <img class="image active-jump" src="images/slideshow/11.jpg" draggable="false" />
+            <img class="image active-jump" src="images/slideshow/12.jpg" draggable="false" />
+            <img class="image active-jump" src="images/slideshow/13.jpg" draggable="false" />
+        </div>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h1 style="color:white;">Get in Touch</h1>
+        <h2>Feel free to contact me under:</h2>
+        <div class="header-icons">
+            <a aria-label="Send Email" href="mailto:philipgouverneur@gmx.de" target="_blank"><i
+                    class="icon fa fa-envelope"></i>
+            </a>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        <a href="./copyrightstatement.html"> Copyright</a> &copy; <span id="current-year">2023</span>
+                        Philip Gouverneur
+                    </p>
+                    <p>
+                        The source code of and licenses used for this website can be found under:
+                        <a href="https://github.com/gouverneurp/gouverneurp.github.io" target="_blank">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                    </p>
+                    <p>
+                        Last modified on: 17/11/2023
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social footer-icons">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/gouverneurp" target="_blank"><i class="icon fa fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://scholar.google.de/citations?user=VsHUNwgAAAAJ" target="_blank"><i
+                                    class="icon ai ai-google-scholar" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://orcid.org/0000-0001-8610-2291" target="_blank"><i class="icon ai ai-orcid"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/philip-gouverneur/" target="_blank"><i
+                                    class="icon fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- Import JS: Particles Theme -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.2/dist/simple-notify.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <!-- Import JS: Main Script -->
+    <script src="js/particle.js"></script>
+    <script src="js/sligingimages.js"></script>
+    <script src="js/modals.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="libs/echarts/echarts.js"></script>
+    <script src="js/bar.js"></script>
+</body>
+
+</html>

@@ -1,9 +1,9 @@
 
-name: Update citation count
+name: 'update-citations'
 
 on:
   schedule:
-    - cron:  '*/5 * * * *'
+    - cron:  '48 03 * * *'
 
 permissions:
   contents: read

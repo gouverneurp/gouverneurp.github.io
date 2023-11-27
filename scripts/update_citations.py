@@ -1,3 +1,4 @@
+import argparse
 import os
 import sys
 import fileinput
@@ -106,6 +107,13 @@ if __name__ == '__main__':
     # Set working directory to main directory of repository
     os.chdir(Path(sys.path[0]).parent)
 
+    # Initiate the parser
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-p", "--push", help="Push changes without asking.", action="store_true")
+
+    # Read arguments from the command line
+    args = parser.parse_args()
+
     # check if "bar.js" has changes from git repository
     script_file = Path("js/bar.js")
     is_changed = git_changed(file= script_file)
@@ -137,9 +145,13 @@ if __name__ == '__main__':
     print("Old citations: ", citations_old)
     print("Years: ", years)
     print("Citations: ", citations)
-    should_continue = query_yes_no("Do you want to push the changes?")
+    
+    if (args.push is False):
+        should_continue = query_yes_no("Do you want to push the changes?")
+    else:
+        should_continue = True
 
-    if should_continue is False:
+    if (should_continue is False):
         quit()
 
     # git commit + push

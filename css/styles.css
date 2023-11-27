@@ -977,7 +977,7 @@ li-pubs:before {
 }
 
 .header-icons {
-    display: flex;
+    display: block;
     justify-content: center;
     text-align: center;
 }

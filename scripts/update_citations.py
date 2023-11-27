@@ -16,14 +16,13 @@ def replace_all(file, searchExp, replaceExp):
         sys.stdout.write(line)
 
 def get_citations_file(file):
+    return get_line_with(file, expression= "data/*yaxis*/"), get_line_with(file, expression= "data/*xaxis*/")
+
+def get_line_with(file, expression):
     f = open(file, "r")
     for line in f:
-        if "data/*yaxis*/" in line:
-            citations = line
-
-        if "data/*xaxis*/" in line:
-            years = line
-    return years, citations
+        if expression in line:
+            return line
 
 #-------------------------------------------------------------------------------------------------------
 # User interaction

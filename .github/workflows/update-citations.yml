@@ -4,6 +4,7 @@ name: 'update-citations'
 on:
   schedule:
     - cron:  '48 03 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -29,4 +30,4 @@ jobs:
           git config --local user.name "GitHub Action"
     - name: Run python
       run: |
-        run: python scripts/update_citations.py --push
+        python scripts/update_citations.py --push

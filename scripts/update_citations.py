@@ -17,7 +17,7 @@ def replace_all(file, searchExp, replaceExp):
         sys.stdout.write(line)
 
 def get_citations_file(file):
-    return get_line_with(file, expression= "data/*yaxis*/"), get_line_with(file, expression= "data/*xaxis*/")
+    return get_line_with(file, expression= "data/*xaxis*/"), get_line_with(file, expression= "data/*yaxis*/")
 
 def get_line_with(file, expression):
     f = open(file, "r")

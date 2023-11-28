@@ -21,7 +21,7 @@ function createBarChart() {
         xAxis: [
             {
                 type: 'category',
-                data/*yaxis*/: [1, 6, 9, 22, 35, 62, { value: 135, itemStyle: { color: '#a90000' } },],
+                data/*xaxis*/: [1, 6, 9, 22, 35, 62, { value: 135, itemStyle: { color: '#a90000' } },],
                 axisTick: {
                     alignWithLabel: true
                 }

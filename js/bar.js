@@ -21,7 +21,7 @@ function createBarChart() {
         xAxis: [
             {
                 type: 'category',
-                data/*xaxis*/: ['2018', '2019', '2020', '2021', '2022', '2023', 'Overall'],
+                data/*yaxis*/: [1, 6, 9, 22, 35, 62, { value: 135, itemStyle: { color: '#a90000' } },],
                 axisTick: {
                     alignWithLabel: true
                 }
@@ -37,7 +37,7 @@ function createBarChart() {
                 name: 'Citations',
                 type: 'bar',
                 barWidth: '60%',
-                data/*yaxis*/: [1, 6, 9, 22, 35, 57, { value: 130, itemStyle: { color: '#a90000' } },],
+                data/*yaxis*/: [1, 6, 9, 22, 35, 62, { value: 135, itemStyle: { color: '#a90000' } },],
                 itemStyle: {
                     borderRadius: 3,
                     borderWidth: 1,

@@ -3,11 +3,11 @@ name: 'update-citations'
 
 on:
   schedule:
-    - cron:  '48 03 * * *'
+    - cron:  '45 03 * * 1'
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:

@@ -376,6 +376,7 @@ footer {
 
 #about {
     padding: 75px 15px;
+    text-align: center;
     border-bottom: 1px solid #dcd9d9
 }
 
@@ -927,6 +928,10 @@ footer {
     #chart {
         max-width: 340px;
     }
+}
+
+.publication-container{
+    text-align: justify;
 }
 
 .publication-image-container {

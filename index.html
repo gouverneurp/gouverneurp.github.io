@@ -15,20 +15,43 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Philip Gouverneur</title>
-    <meta name="description" content="Website of Philip Gouverneur" />
-    <meta property="og:title" content="Philip Gouverneur" />
-    <meta property="og:url" content="https://gouverneurp.github.io/" />
-    <meta property="og:description" content="Website of Philip Gouverneur" />
-    <meta property="og:image" content="https://gouverneurp.github.io/images/cv_photo.jpg" />
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Website of Philip Gouverneur</title>
+    <meta name="description" content="This is the website of Philip Gouverneur, including an about, experience, publications, projects, photographs, and contact section.">
+    <meta property="og:title" content="Website of Philip Gouverneur">
+    <meta property="og:url" content="https://gouverneurp.github.io/">
+    <meta property="og:description" content="This is the website of Philip Gouverneur, including an about, experience, publications, projects, photographs, and contact section.">
+    <meta property="og:image" content="https://gouverneurp.github.io/images/cv_photo.jpg">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.2/dist/simple-notify.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.2/dist/simple-notify.min.css">
     <link href="css/styles.css" rel="stylesheet">
+    <!--icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="assets/icons/site.webmanifest">
+    <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!--Profile information-->
+    <script type="application/ld+json">
+        {
+          "@context": "https://gouverneurp.github.io/",
+          "@type": "ProfilePage",
+          "mainEntity": {
+            "@type": "Person",
+            "name": "Philip Gouverneur",
+            "interactionStatistic": [
+            "description": "Defender of Truth",
+            "image": "https://gouverneurp.github.io/images/cv_photo.jpg",
+          }
+        }
+    </script>
+    
 </head>
 
 <body onload="remove_loading_spinner();">
@@ -123,24 +146,19 @@
     <!-- End #lead -->
 
     <div id="about">
-        <center>
+        <h2 class="heading">About Me</h2>
             <div class="container hiddenScroll">
-                <h2 class="heading">About Me</h2>
                 <div class="col-md-12">
                     <div class="col-md-3">
-                        <picture>
-                            <source type="image/webp" srcset="./images/cv_photo.jpg" alt="Me" width="100%"
-                                style="border-radius: 50%" />
-                            <div class="portrait">
-                                <img src="./images/cv_photo.jpg" alt="Me" />
-                            </div>
-                        </picture>
+                        <div class="portrait">
+                            <img src="./images/cv_photo.jpg" alt="Philip Gouverneur CV Photo">
+                        </div>
                     </div>
                     <div class="col-md-9">
                         <p class="about-text">
                             I'm Philip Gouverneur, a PhD student in Computer Science at the University of Lübeck with a
                             strong focus on Machine Learning (ML) and its applications, especially in time series
-                            analysis and artificial intelligence. My research journey has also led me to explore the
+                            analysis and Deep Learning (DL). My research journey has also led me to explore the
                             exciting field of Explainable AI (XAI). I've had the privilege of applying these concepts to
                             real-world projects. One notable project is my involvement in a BMBF-funded initiative
                             called PainMonit, which focuses on automated pain detection based on physiological sensing
@@ -150,7 +168,6 @@
                     </div>
                 </div>
             </div>
-        </center>
     </div>
     <!-- End #about -->
 
@@ -209,8 +226,8 @@
                     Electrodermal Activity for Automated Pain Recognition</h3>
                 <h4>MDPI Sensors</h4>
                 <div class="publication-image-container">
-                    <img class="publication-image" width="300" height="300" src="images/publications/xai.png"
-                        style="border-radius: 3px" />
+                    <img class="publication-image" width="300" height="300" src="images/publications/xai.png" alt="Philip Gouverneur Sensors Publication 2023"
+                        style="border-radius: 3px">
                 </div>
                 <div class="publication-text">
                     Artificial intelligence and especially deep learning methods have achieved outstanding
@@ -279,8 +296,8 @@
                 <h4>MDPI Sensors</h4>
 
                 <div class="publication-image-container">
-                    <img class="publication-image" width="300" height="300" src="images/publications/comparison.png"
-                        style="border-radius: 3px" />
+                    <img class="publication-image" width="300" height="300" src="images/publications/comparison.png" alt="Philip Gouverneur Sensors Publication 2021"
+                        style="border-radius: 3px">
                 </div>
                 <div class="publication-text">
                     While even the most common definition of pain is under debate, pain assessment has remained the
@@ -337,7 +354,7 @@
 
         <h2 class="heading" style="margin-top: 50px;">All Publications</h2>
 
-        <div class="container" align="justify">
+        <div class="container publication-container">
 
             <!-- Start publications-->
 
@@ -950,7 +967,7 @@
                 <!-- Start project -->
                 <div class="project shadow-large hiddenScroll" style="--order: 1;">
                     <div class="project-image">
-                        <img src="images/projects/painmonit.png" width="300" height="300" />
+                        <img src="images/projects/painmonit.png" width="300" height="300" alt="PainMonit Project Logo">
                     </div>
                     <div class="project-info">
                         <h3>Multimodale Plattform zum Schmerzmonitoring in der Physiotherapie (PainMonit)</h3>
@@ -981,7 +998,7 @@
                 <!-- Start project -->
                 <div class="project shadow-large hiddenScroll" style="--order: 2;">
                     <div class="project-image">
-                        <img src="images/projects/myAHA.jpg" width="300" height="300" />
+                        <img src="images/projects/myAHA.jpg" width="300" height="300" alt="myAHA Project Logo">
                     </div>
                     <div class="project-info">
                         <h3>My Active and Healthy Aging (myAHA)</h3>
@@ -1009,7 +1026,7 @@
 
                 <div class="project shadow-large hiddenScroll" style="--order: 3;">
                     <div class="project-image">
-                        <img src="images/projects/screenfm.jpg" width="300" height="300" />
+                        <img src="images/projects/screenfm.jpg" width="300" height="300" alt="ScreenFM Project Logo">
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
@@ -1044,23 +1061,22 @@
         <h2 class="heading">Photographs</h2>
         <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
             <div class="image-icons active-jump" id="image-helper">
-                <a aria-label="Send Email" target="_blank"><i class="icon fa fa-arrow-left"></i>
-                </a>
+                <i class="icon fa fa-arrow-left"></i>
                 Grab images!
             </div>
-            <img class="image active-jump" src="images/slideshow/1.jpg" draggable="false" />
-            <img class="image active-jump" src="images/slideshow/2.jpg" draggable="false" />
-            <img class="image active-jump" src="images/slideshow/3.jpg" draggable="false" />
-            <img class="image active-jump" src="images/slideshow/4.jpg" draggable="false" />
-            <img class="image active-jump" src="images/slideshow/5.jpg" draggable="false" />
-            <img class="image active-jump" src="images/slideshow/6.jpg" draggable="false" />
-            <img class="image active-jump" src="images/slideshow/7.jpg" draggable="false" />
-            <img class="image active-jump" src="images/slideshow/8.jpg" draggable="false" />
-            <img class="image active-jump" src="images/slideshow/9.jpg" draggable="false" />
-            <img class="image active-jump" src="images/slideshow/10.jpg" draggable="false" />
-            <img class="image active-jump" src="images/slideshow/11.jpg" draggable="false" />
-            <img class="image active-jump" src="images/slideshow/12.jpg" draggable="false" />
-            <img class="image active-jump" src="images/slideshow/13.jpg" draggable="false" />
+            <img class="image active-jump" src="images/slideshow/1.jpg" alt="Philip Gouverneur Own Photography 1" draggable="false">
+            <img class="image active-jump" src="images/slideshow/2.jpg" alt="Philip Gouverneur Own Photography 2" draggable="false">
+            <img class="image active-jump" src="images/slideshow/3.jpg" alt="Philip Gouverneur Own Photography 3" draggable="false">
+            <img class="image active-jump" src="images/slideshow/4.jpg" alt="Philip Gouverneur Own Photography 4" draggable="false">
+            <img class="image active-jump" src="images/slideshow/5.jpg" alt="Philip Gouverneur Own Photography 5" draggable="false">
+            <img class="image active-jump" src="images/slideshow/6.jpg" alt="Philip Gouverneur Own Photography 6" draggable="false">
+            <img class="image active-jump" src="images/slideshow/7.jpg" alt="Philip Gouverneur Own Photography 7" draggable="false">
+            <img class="image active-jump" src="images/slideshow/8.jpg" alt="Philip Gouverneur Own Photography 8" draggable="false">
+            <img class="image active-jump" src="images/slideshow/9.jpg" alt="Philip Gouverneur Own Photography 9" draggable="false">
+            <img class="image active-jump" src="images/slideshow/10.jpg" alt="Philip Gouverneur Own Photography 10" draggable="false">
+            <img class="image active-jump" src="images/slideshow/11.jpg" alt="Philip Gouverneur Own Photography 11" draggable="false">
+            <img class="image active-jump" src="images/slideshow/12.jpg" alt="Philip Gouverneur Own Photography 12" draggable="false">
+            <img class="image active-jump" src="images/slideshow/13.jpg" alt="Philip Gouverneur Own Photography 13" draggable="false">
         </div>
     </div>
     <!-- End #skills -->
@@ -1122,6 +1138,16 @@
                             <a href="https://www.researchgate.net/profile/Philip-Gouverneur" target="_blank"><i
                                     class="icon ai ai-researchgate" aria-hidden="true"></i></a>
                         </li>
+                        <!--
+                            <li>
+                            <a href="https://sciprofiles.com/profile/gouverneur" target="_blank"><i
+                                class="icon ai ai-sciprofiles" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.webofscience.com/wos/author/record/HNI-2440-2023" target="_blank"><i
+                                    class="icon ai ai-clarivate" aria-hidden="true"></i></a>
+                            </li>
+                        -->
                     </ul>
                 </div>
             </div>

@@ -1,7 +1,5 @@
 User-agent: *
 Disallow: /scripts/
 Disallow: /assets/
-Disallow: /images/projects/
-Disallow: /images/publications/
 Disallow: /images/slideshow/
 Sitemap: https://gouverneurp.github.io/sitemap.xml

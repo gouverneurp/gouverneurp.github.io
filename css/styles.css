@@ -939,6 +939,10 @@ footer {
     padding: 0px 20px 10px 0px;
 }
 
+.publication-image-container img {
+    border-radius: 3px
+}
+
 .publication-text {
     text-align: justify;
     color: #fff;
@@ -1185,6 +1189,13 @@ li-pubs:before {
     max-width: 25cm;
 }
 
+.modal-heading {
+    color: #374054;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+}
+
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {
@@ -1346,4 +1357,17 @@ li-pubs:before {
     margin-right: auto;
     width: 800px;
     height: 500px;
+}
+
+.footer-header {
+    text-align: center;
+    color: #fff;
+    font-size: 32px
+}
+
+.footer-text {
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    font-family: 'Lato', sans-serif;
 }

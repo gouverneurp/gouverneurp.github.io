@@ -30,7 +30,17 @@ The most important ones can be found in the following:
 ├── README.md
 ├── assets
 │   ├── cv.pdf
-│   ├── favicon.ico
+│   ├── icons
+│   │   ├── android-chrome-192x192.png
+│   │   ├── android-chrome-512x512.png
+│   │   ├── apple-touch-icon.png
+│   │   ├── browserconfig.xml
+│   │   ├── favicon-16x16.png
+│   │   ├── favicon-32x32.png
+│   │   ├── favicon.ico
+│   │   ├── mstile-150x150.png
+│   │   ├── safari-pinned-tab.svg
+│   │   └── site.webmanifest
 │   └── publication_list_gouverneur.pdf
 ├── copyrightstatement.html
 ├── css
@@ -61,28 +71,26 @@ The most important ones can be found in the following:
 │       └── 9.jpg
 ├── index.html
 ├── js
-│   ├── appear.js
-│   ├── bar.js
-│   ├── modals.js
-│   ├── particle.js
-│   ├── scripts.min.js
-│   └── sligingimages.js
-└── libs
-    ├── echarts
-    │   ├── echarts.js
-    │   ├── echarts.js.map
-    │   └── echarts.simple.js.map
-    └── font-awesome
-        ├── css
-        │   ├── font-awesome.css
-        │   └── font-awesome.min.css
-        └── fonts
-            ├── FontAwesome.otf
-            ├── fontawesome-webfont.eot
-            ├── fontawesome-webfont.svg
-            ├── fontawesome-webfont.ttf
-            ├── fontawesome-webfont.woff
-            └── fontawesome-webfont.woff2
+│   ├── js.js
+│   └── scripts.min.js
+├── libs
+│   ├── echarts
+│   │   ├── echarts.js
+│   │   ├── echarts.js.map
+│   │   └── echarts.simple.js.map
+│   └── font-awesome
+│       ├── css
+│       │   ├── font-awesome.css
+│       │   └── font-awesome.min.css
+│       └── fonts
+│           ├── FontAwesome.otf
+│           ├── fontawesome-webfont.eot
+│           ├── fontawesome-webfont.svg
+│           ├── fontawesome-webfont.ttf
+│           ├── fontawesome-webfont.woff
+│           └── fontawesome-webfont.woff2
+├── robots.txt
+└── sitemap.xml
 ```
 
 Tree structure was created using following command:

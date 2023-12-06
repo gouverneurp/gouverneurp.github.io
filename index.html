@@ -16,11 +16,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Website of Philip Gouverneur</title>
-    <meta name="description" content="This is the website of Philip Gouverneur, including an about, experience, publications, projects, photographs, and contact section.">
-    <meta property="og:title" content="Website of Philip Gouverneur">
+    <meta name="description"
+        content="I'm Philip Gouverneur, a PhD student in Computer Science at the University of Lübeck with a strong focus on Machine Learning (ML) and its applications, especially in time series analysis and Deep Learning (DL).">
+    <meta property="og:title" content="Philip Johannes Gouverneur">
     <meta property="og:url" content="https://gouverneurp.github.io/">
-    <meta property="og:description" content="This is the website of Philip Gouverneur, including an about, experience, publications, projects, photographs, and contact section.">
+    <meta property="og:description"
+        content="I'm Philip Gouverneur, a PhD student in Computer Science at the University of Lübeck with a strong focus on Machine Learning (ML) and its applications, especially in time series analysis and Deep Learning (DL).">
     <meta property="og:image" content="https://gouverneurp.github.io/images/cv_photo.jpg">
+    <link rel="canonical" href="https://gouverneurp.github.io/">
+
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -49,18 +53,9 @@
           }
         }
     </script>
-    
 </head>
 
-<body onload="remove_loading_spinner();">
-
-    <!-- Loading spinner -->
-    <div class="loading-background" id="loading-background">
-        <div class="fulfilling-square-spinner">
-            <div class="spinner-inner"></div>
-        </div>
-    </div>
-
+<body>
     <div id="mobile-menu-open" class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
@@ -123,7 +118,8 @@
                     </a>
                 -->
 
-                <a aria-label="ResearchGate" target="_blank" href="https://www.researchgate.net/profile/Philip-Gouverneur/">
+                <a aria-label="ResearchGate" target="_blank"
+                    href="https://www.researchgate.net/profile/Philip-Gouverneur/">
                     <i class="icon ai ai-researchgate ai-2x" aria-hidden="true"></i>
                 </a>
 
@@ -145,27 +141,28 @@
 
     <div id="about">
         <h2 class="heading">About Me</h2>
-            <div class="container hiddenScroll">
-                <div class="col-md-12">
-                    <div class="col-md-3">
-                        <div class="portrait">
-                            <img src="./images/cv_photo.jpg" alt="Philip Gouverneur CV Photo">
-                        </div>
-                    </div>
-                    <div class="col-md-9">
-                        <p class="about-text">
-                            I'm Philip Gouverneur, a PhD student in Computer Science at the University of Lübeck with a
-                            strong focus on Machine Learning (ML) and its applications, especially in time series
-                            analysis and Deep Learning (DL). My research journey has also led me to explore the
-                            exciting field of Explainable AI (XAI). I've had the privilege of applying these concepts to
-                            real-world projects. One notable project is my involvement in a BMBF-funded initiative
-                            called PainMonit, which focuses on automated pain detection based on physiological sensing
-                            modalities. The results of my research have been reported in several publications, mainly in
-                            the journal MDPI. In my spare time, I enjoy photography, skiing, and playing the guitar.
-                        </p>
+        <div class="container hiddenScroll">
+            <div class="col-md-12">
+                <div class="col-md-3">
+                    <div class="portrait">
+                        <img src="./images/cv_photo.jpg" alt="Philip Gouverneur CV Photo"
+                            title="Gouverneur, Philip Johannes">
                     </div>
                 </div>
+                <div class="col-md-9">
+                    <p class="about-text">
+                        I'm Philip Gouverneur, a PhD student in Computer Science at the University of Lübeck with a
+                        strong focus on Machine Learning (ML) and its applications, especially in time series
+                        analysis and Deep Learning (DL). My research journey has also led me to explore the
+                        exciting field of Explainable AI (XAI). I've had the privilege of applying these concepts to
+                        real-world projects. One notable project is my involvement in a BMBF-funded initiative
+                        called PainMonit, which focuses on automated pain detection based on physiological sensing
+                        modalities. The results of my research have been reported in several publications, mainly in
+                        the journal MDPI. In my spare time, I enjoy photography, skiing, and playing the guitar.
+                    </p>
+                </div>
             </div>
+        </div>
     </div>
     <!-- End #about -->
 
@@ -224,8 +221,8 @@
                     Electrodermal Activity for Automated Pain Recognition</h3>
                 <h4>MDPI Sensors</h4>
                 <div class="publication-image-container">
-                    <img class="publication-image" width="300" height="300" src="images/publications/xai.png" alt="Philip Gouverneur Sensors Publication 2023"
-                        style="border-radius: 3px">
+                    <img class="publication-image" width="300" height="300" src="images/publications/xai.png"
+                        alt="Philip Gouverneur Sensors Publication 2023" title="Scheme of Sensors Publication 2023">
                 </div>
                 <div class="publication-text">
                     Artificial intelligence and especially deep learning methods have achieved outstanding
@@ -261,8 +258,8 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <span class="close">&times;</span>
-                            <h2>Cite: Explainable Artificial Intelligence (XAI) in Pain Research: Understanding the Role
-                                of Electrodermal Activity for Automated Pain Recognition</h2>
+                            <div class="modal-heading">Cite: Explainable Artificial Intelligence (XAI) in Pain Research:
+                                Understanding the Role of Electrodermal Activity for Automated Pain Recognition</div>
                         </div>
                         <div class="modal-body">@article{gouverneur2023explainable,
     title        = {Explainable artificial intelligence (XAI) in pain research: Understanding the role of electrodermal activity for automated pain recognition},
@@ -294,8 +291,8 @@
                 <h4>MDPI Sensors</h4>
 
                 <div class="publication-image-container">
-                    <img class="publication-image" width="300" height="300" src="images/publications/comparison.png" alt="Philip Gouverneur Sensors Publication 2021"
-                        style="border-radius: 3px">
+                    <img class="publication-image" width="300" height="300" src="images/publications/comparison.png"
+                        alt="Philip Gouverneur Sensors Publication 2021" title="Scheme of Sensors Publication 2021">
                 </div>
                 <div class="publication-text">
                     While even the most common definition of pain is under debate, pain assessment has remained the
@@ -327,8 +324,8 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <span class="close">&times;</span>
-                            <h2>Comparison of Feature Extraction Methods for Physiological Signals for Heat-Based Pain
-                                Recognition</h2>
+                            <div class="modal-heading">Comparison of Feature Extraction Methods for Physiological
+                                Signals for Heat-Based Pain Recognition</div>
                         </div>
                         <div class="modal-body">@article{gouverneur2021comparison,
     title={Comparison of feature extraction methods for physiological signals for heat-based pain recognition},
@@ -399,9 +396,9 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <span class="close">&times;</span>
-                                    <h2>Cite: Objective Measurement of Subjective Pain Perception with Autonomic Body
-                                        Reactions in Healthy Subjects and Chronic Back Pain Patients: An Experimental
-                                        Heat Pain Study</h2>
+                                    <div class="modal-heading">Cite: Objective Measurement of Subjective Pain Perception
+                                        with Autonomic Body Reactions in Healthy Subjects and Chronic Back Pain
+                                        Patients: An Experimental Heat Pain Study</div>
                                 </div>
                                 <div class="modal-body">@article{luebke2023objective,
     title={Objective Measurement of Subjective Pain Perception with Autonomic Body Reactions in Healthy Subjects and Chronic Back Pain Patients: An Experimental Heat Pain Study},
@@ -441,8 +438,8 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <span class="close">&times;</span>
-                                    <h2>Cite: Psychological Mechanisms of Offset Analgesia: The Effect of Expectancy
-                                        Manipulation</h2>
+                                    <div class="modal-heading">Cite: Psychological Mechanisms of Offset Analgesia: The
+                                        Effect of Expectancy Manipulation</div>
                                 </div>
                                 <div class="modal-body">@article{szikszay2023psychological,
     title={Psychological mechanisms of offset analgesia: The effect of expectancy manipulation},
@@ -480,9 +477,8 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <span class="close">&times;</span>
-                                    <h2>Cite: Differential Effects of Thermal Stimuli in Eliciting Temporal Contrast
-                                        Enhancement: A
-                                        Psychophysical Study</h2>
+                                    <div class="modal-heading">Cite: Differential Effects of Thermal Stimuli in
+                                        Eliciting Temporal Contrast Enhancement: A Psychophysical Study</div>
                                 </div>
                                 <div class="modal-body">@article{luebke2023differential,
     title={Differential Effects of Thermal Stimuli in Eliciting Temporal Contrast Enhancement: A Psychophysical Study},
@@ -517,8 +513,8 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <span class="close">&times;</span>
-                                    <h2>Cite: Exploring the Benefits of Time Series Data Augmentation for Wearable Human
-                                        Activity Recognition</h2>
+                                    <div class="modal-heading">Cite: Exploring the Benefits of Time Series Data
+                                        Augmentation for Wearable Human Activity Recognition</div>
                                 </div>
                                 <div class="modal-body">@inproceedings{hasan2023exploring,
     title        = {{Exploring the Benefits of Time Series Data Augmentation for Wearable Human Activity Recognition}},
@@ -562,8 +558,8 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <span class="close">&times;</span>
-                                    <h2>Cite: SenseHunger: Machine Learning Approach to Hunger Detection Using Wearable
-                                        Sensors</h2>
+                                    <div class="modal-heading">Cite: SenseHunger: Machine Learning Approach to Hunger
+                                        Detection Using Wearable Sensors</div>
                                 </div>
                                 <div class="modal-body">@article{irshad2022sensehunger,
     title={SenseHunger: Machine Learning Approach to Hunger Detection Using Wearable Sensors},
@@ -604,8 +600,8 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <span class="close">&times;</span>
-                                    <h2>Cite: Temporal Properties of Pain Contrast Enhancement using Repetitive
-                                        Stimulation</h2>
+                                    <div class="modal-heading">Cite: Temporal Properties of Pain Contrast Enhancement
+                                        using Repetitive Stimulation</div>
                                 </div>
                                 <div class="modal-body">@article{szikszay2022temporal,
     title={Temporal properties of pain contrast enhancement using repetitive stimulation},
@@ -646,8 +642,8 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <span class="close">&times;</span>
-                                    <h2>Cite: To Calibrate or not to Calibrate? A Methodological Dilemma in Experimental
-                                        Pain Research</h2>
+                                    <div class="modal-heading">Cite: To Calibrate or not to Calibrate? A Methodological
+                                        Dilemma in Experimental Pain Research</div>
                                 </div>
                                 <div class="modal-body">@article{adamczyk2022calibrate,
     title={To calibrate or not to calibrate? A methodological dilemma in experimental pain research},
@@ -704,10 +700,11 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <span class="close">&times;</span>
-                                    <h2>Cite: Classification of Heat-Induced Pain Using Physiological Signals</h2>
+                                    <div class="modal-heading">Cite: Classification of Heat-Induced Pain Using
+                                        Physiological Signals</div>
                                 </div>
                                 <div class="modal-body">@article{gouverneur2021classification,
-    title={Classification of Heat-Induced Pain Using Physiological Signals},
+                                    title={Classification of Heat-Induced Pain Using Physiological Signals},
     author={Gouverneur, Philip J and Li, Fr{\'e}d{\'e}ric and M. Szikszay, Tibor and M. Adamczyk, Waclaw and Luedtke, Kerstin and Grzegorzek, Marcin},
     journal={Information Technology in Biomedicine},
     pages={239--251},
@@ -746,12 +743,11 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <span class="close">&times;</span>
-                                    <h2>Cite: AI Approaches towards Prechtl’s Assessment of General Movements: A
-                                        Systematic Literature
-                                        Review</h2>
+                                    <div class="modal-heading">Cite: AI Approaches towards Prechtl's Assessment of
+                                        General Movements: A Systematic Literature Review</div>
                                 </div>
                                 <div class="modal-body">@article{irshad2020ai,
-    title={Ai approaches towards Prechtl’s assessment of general movements: A systematic literature review},
+    title={Ai approaches towards Prechtl's assessment of general movements: A systematic literature review},
     author={Irshad, Muhammad Tausif and Nisar, Muhammad Adeel and Gouverneur, Philip and Rapp, Marion and Grzegorzek, Marcin},
     journal={Sensors},
     volume={20},
@@ -788,10 +784,11 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <span class="close">&times;</span>
-                                    <h2>Cite: My-AHA: Software Platform to Promote Active and Healthy Ageing</h2>
+                                    <div class="modal-heading">Cite: My-AHA: Software Platform to Promote Active and
+                                        Healthy Ageing</div>
                                 </div>
                                 <div class="modal-body">@article{madureira2020my,
-    title={My-AHA: software platform to promote active and healthy ageing},
+                                    title={My-AHA: software platform to promote active and healthy ageing},
     author={Madureira, Pedro and Cardoso, Nuno and Sousa, Filipe and Moreira, Waldir and Oliveira, Antonio-Jr and Bazzani, Marco and Gouverneur, Philip},
     journal={Information},
     volume={11},
@@ -829,9 +826,9 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <span class="close">&times;</span>
-                                    <h2>Cite: Adaptiv-lernende, technische Alltagsbegleiter im Alter: Abschlussbericht
-                                        Cognitive Village:
-                                        Berichtszeitraum: 01.09. 2015-30.11. 2018</h2>
+                                    <div class="modal-heading">Cite: Adaptiv-lernende, technische Alltagsbegleiter im
+                                        Alter: Abschlussbericht Cognitive Village: Berichtszeitraum: 01.09. 2015-30.11.
+                                        2018</div>
                                 </div>
                                 <div class="modal-body">@book{beer2019adaptiv,
     title={Adaptiv-lernende, technische Alltagsbegleiter im Alter: Abschlussbericht
@@ -874,9 +871,9 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <span class="close">&times;</span>
-                                    <h2>Cite: The My Active and Healthy Aging (My-AHA) ICT Platform to Detect and
-                                        Prevent Frailty in Older
-                                        Adults: Randomized Control Trial Design and Protocol</h2>
+                                    <div class="modal-heading">Cite: The My Active and Healthy Aging (My-AHA) ICT
+                                        Platform to Detect and Prevent Frailty in Older Adults: Randomized Control Trial
+                                        Design and Protocol</div>
                                 </div>
                                 <div class="modal-body">@article{summers2018my,
     title={The My Active and Healthy Aging (My-AHA) ICT platform to detect and prevent frailty in older adults: Randomized control trial design and protocol},
@@ -918,7 +915,8 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <span class="close">&times;</span>
-                                    <h2>Cite: Classification of Physiological Data for Emotion Recognition</h2>
+                                    <div class="modal-heading">Cite: Classification of Physiological Data for Emotion
+                                        Recognition</div>
                                 </div>
                                 <div class="modal-body">@inproceedings{gouverneur2017classification,
     title={Classification of physiological data for emotion recognition},
@@ -965,7 +963,8 @@
                 <!-- Start project -->
                 <div class="project shadow-large hiddenScroll" style="--order: 1;">
                     <div class="project-image">
-                        <img src="images/projects/painmonit.png" width="300" height="300" alt="PainMonit Project Logo">
+                        <img src="images/projects/painmonit.png" width="300" height="300" alt="PainMonit Project Logo"
+                            title="PainMonit Project Logo">
                     </div>
                     <div class="project-info">
                         <h3>Multimodale Plattform zum Schmerzmonitoring in der Physiotherapie (PainMonit)</h3>
@@ -996,7 +995,8 @@
                 <!-- Start project -->
                 <div class="project shadow-large hiddenScroll" style="--order: 2;">
                     <div class="project-image">
-                        <img src="images/projects/myAHA.jpg" width="300" height="300" alt="myAHA Project Logo">
+                        <img src="images/projects/myAHA.jpg" width="300" height="300" alt="myAHA Project Logo"
+                            title="myAHA Project Logo">
                     </div>
                     <div class="project-info">
                         <h3>My Active and Healthy Aging (myAHA)</h3>
@@ -1024,7 +1024,8 @@
 
                 <div class="project shadow-large hiddenScroll" style="--order: 3;">
                     <div class="project-image">
-                        <img src="images/projects/screenfm.jpg" width="300" height="300" alt="ScreenFM Project Logo">
+                        <img src="images/projects/screenfm.jpg" width="300" height="300" alt="ScreenFM Project Logo"
+                            title="ScreenFM Project Logo">
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
@@ -1062,26 +1063,39 @@
                 <i class="icon fa fa-arrow-left"></i>
                 Grab images!
             </div>
-            <img class="image active-jump" src="images/slideshow/1.jpg" alt="Philip Gouverneur Own Photography 1" draggable="false">
-            <img class="image active-jump" src="images/slideshow/2.jpg" alt="Philip Gouverneur Own Photography 2" draggable="false">
-            <img class="image active-jump" src="images/slideshow/3.jpg" alt="Philip Gouverneur Own Photography 3" draggable="false">
-            <img class="image active-jump" src="images/slideshow/4.jpg" alt="Philip Gouverneur Own Photography 4" draggable="false">
-            <img class="image active-jump" src="images/slideshow/5.jpg" alt="Philip Gouverneur Own Photography 5" draggable="false">
-            <img class="image active-jump" src="images/slideshow/6.jpg" alt="Philip Gouverneur Own Photography 6" draggable="false">
-            <img class="image active-jump" src="images/slideshow/7.jpg" alt="Philip Gouverneur Own Photography 7" draggable="false">
-            <img class="image active-jump" src="images/slideshow/8.jpg" alt="Philip Gouverneur Own Photography 8" draggable="false">
-            <img class="image active-jump" src="images/slideshow/9.jpg" alt="Philip Gouverneur Own Photography 9" draggable="false">
-            <img class="image active-jump" src="images/slideshow/10.jpg" alt="Philip Gouverneur Own Photography 10" draggable="false">
-            <img class="image active-jump" src="images/slideshow/11.jpg" alt="Philip Gouverneur Own Photography 11" draggable="false">
-            <img class="image active-jump" src="images/slideshow/12.jpg" alt="Philip Gouverneur Own Photography 12" draggable="false">
-            <img class="image active-jump" src="images/slideshow/13.jpg" alt="Philip Gouverneur Own Photography 13" draggable="false">
+            <img class="image active-jump" src="images/slideshow/1.jpg" alt="Philip Gouverneur Own Photography 1"
+                draggable="false">
+            <img class="image active-jump" src="images/slideshow/2.jpg" alt="Philip Gouverneur Own Photography 2"
+                draggable="false">
+            <img class="image active-jump" src="images/slideshow/3.jpg" alt="Philip Gouverneur Own Photography 3"
+                draggable="false">
+            <img class="image active-jump" src="images/slideshow/4.jpg" alt="Philip Gouverneur Own Photography 4"
+                draggable="false">
+            <img class="image active-jump" src="images/slideshow/5.jpg" alt="Philip Gouverneur Own Photography 5"
+                draggable="false">
+            <img class="image active-jump" src="images/slideshow/6.jpg" alt="Philip Gouverneur Own Photography 6"
+                draggable="false">
+            <img class="image active-jump" src="images/slideshow/7.jpg" alt="Philip Gouverneur Own Photography 7"
+                draggable="false">
+            <img class="image active-jump" src="images/slideshow/8.jpg" alt="Philip Gouverneur Own Photography 8"
+                draggable="false">
+            <img class="image active-jump" src="images/slideshow/9.jpg" alt="Philip Gouverneur Own Photography 9"
+                draggable="false">
+            <img class="image active-jump" src="images/slideshow/10.jpg" alt="Philip Gouverneur Own Photography 10"
+                draggable="false">
+            <img class="image active-jump" src="images/slideshow/11.jpg" alt="Philip Gouverneur Own Photography 11"
+                draggable="false">
+            <img class="image active-jump" src="images/slideshow/12.jpg" alt="Philip Gouverneur Own Photography 12"
+                draggable="false">
+            <img class="image active-jump" src="images/slideshow/13.jpg" alt="Philip Gouverneur Own Photography 13"
+                draggable="false">
         </div>
     </div>
     <!-- End #skills -->
 
     <div id="contact">
-        <h1 style="color:white;">Get in Touch</h1>
-        <h2>Feel free to contact me under:</h2>
+        <div class="footer-header">Get in Touch</div>
+        <div class="footer-text">Feel free to contact me under:</div>
         <div class="header-icons">
             <a aria-label="Send Email" href="mailto:philipgouverneur@gmx.de" target="_blank"><i
                     class="icon fa fa-envelope"></i>
@@ -1157,14 +1171,9 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.2/dist/simple-notify.min.js"></script>
-    <script src="js/scripts.min.js"></script>
     <!-- Import JS: Main Script -->
-    <script src="js/particle.js"></script>
-    <script src="js/sligingimages.js"></script>
-    <script src="js/modals.js"></script>
-    <script src="js/appear.js"></script>
     <script src="libs/echarts/echarts.js"></script>
-    <script src="js/bar.js"></script>
+    <script src="js/js.js"></script>
 </body>
 
 </html>

@@ -228,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function () {
     new particlesJS("lead", {
         particles: {
             number: {
-                value: 30,
+                value: 50,
                 density: {
                     enable: !0,
                     value_area: 800

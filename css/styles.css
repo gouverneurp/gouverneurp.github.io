@@ -939,7 +939,9 @@ footer {
 }
 
 .publication-image-container img {
-    border-radius: 3px
+    border-radius: 3px;
+    width: 285px;
+    height: 285px;
 }
 
 .publication-text {

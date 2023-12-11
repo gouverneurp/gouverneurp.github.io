@@ -114,8 +114,8 @@ if __name__ == '__main__':
     # Read arguments from the command line
     args = parser.parse_args()
 
-    # check if "bar.js" has changes from git repository
-    script_file = Path("js/bar.js")
+    # check if javascript file has changes from git repository
+    script_file = Path("js/js.js")
     is_changed = git_changed(file= script_file)
     if is_changed:
         raise Exception(f"'{script_file}' has uncommited changes. Please commit or remove them and rerun the script!")
@@ -136,7 +136,7 @@ if __name__ == '__main__':
         print("Retrieved citations are equal to the old ones. Values are not updated.")
         quit()
 
-    # update local "bar.js" with new values
+    # update local javascript file with new values
     replace_all(file= script_file, searchExp= years_old, replaceExp= years)
     replace_all(file= script_file, searchExp= citations_old, replaceExp= citations)
 

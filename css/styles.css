@@ -516,23 +516,23 @@ footer {
     border: 1px solid #dcd9d9;
     text-align: left;
     border-radius: 4px;
-    background-color: #3498db;
+    background-color: #409EDE;
 }
 
 .education-block h3 {
     font-weight: 500;
     float: left;
     margin: 0;
-    color: #374054;
+    color: #000000;
 }
 
 .education-block span {
-    color: #374054;
+    color: #000000;
     float: right;
 }
 
 .education-block h4 {
-    color: #404b62;
+    color: #000000;
     clear: both;
     font-weight: 500;
     margin: 0 0 15px 0
@@ -541,7 +541,7 @@ footer {
 .education-block p,
 .education-block ul {
     margin: 0;
-    color: #74808a;
+    color: #000000;
     font-size: 0.9em
 }
 
@@ -946,7 +946,7 @@ footer {
 
 .publication-text {
     text-align: justify;
-    color: #fff;
+    color: #000000;
 }
 
 li-pubs {

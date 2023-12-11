@@ -986,6 +986,14 @@ li-pubs:before {
     padding: 50px;
 }
 
+.header .site-description {
+    display: block;
+    line-height: 1;
+    color: #fff;
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
 .header-icons {
     display: block;
     justify-content: center;

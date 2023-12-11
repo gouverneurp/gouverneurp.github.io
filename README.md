@@ -23,6 +23,9 @@ The most important ones can be found in the following:
 8. Sliding images: https://codepen.io/Hyperplexed/pen/MWXBRBp ([MIT license](https://opensource.org/license/mit/)) inspired by [Camille Mormal](https://camillemormal.com/)
 9. Notifications: https://github.com/simple-notify/simple-notify ([MIT license](https://opensource.org/license/mit/))
 
+## Bar chart
+Javascript for bar chart from [link](https://echarts.apache.org/en/builder.html), with 'Bar', 'Grid', 'ToolTip', and 'MarkArea'.
+ 
 ## Project structure
 ```
 .
@@ -49,35 +52,32 @@ The most important ones can be found in the following:
 ├── images
 │   ├── cv_photo.jpg
 │   ├── projects
-│   │   ├── myAHA.jpg
-│   │   ├── painmonit.png
-│   │   └── screenfm.jpg
+│   │   ├── myAHA.webp
+│   │   ├── painmonit.webp
+│   │   └── screenfm.webp
 │   ├── publications
-│   │   ├── comparison.png
-│   │   └── xai.png
+│   │   ├── comparison.webp
+│   │   └── xai.webp
 │   └── slideshow
-│       ├── 1.jpg
-│       ├── 10.jpg
-│       ├── 11.jpg
-│       ├── 12.jpg
-│       ├── 13.jpg
-│       ├── 2.jpg
-│       ├── 3.jpg
-│       ├── 4.jpg
-│       ├── 5.jpg
-│       ├── 6.jpg
-│       ├── 7.jpg
-│       ├── 8.jpg
-│       └── 9.jpg
+│       ├── 1.webp
+│       ├── 10.webp
+│       ├── 11.webp
+│       ├── 12.webp
+│       ├── 13.webp
+│       ├── 2.webp
+│       ├── 3.webp
+│       ├── 4.webp
+│       ├── 5.webp
+│       ├── 6.webp
+│       ├── 7.webp
+│       ├── 8.webp
+│       └── 9.webp
 ├── index.html
 ├── js
-│   ├── js.js
-│   └── scripts.min.js
+│   └── js.js
 ├── libs
 │   ├── echarts
-│   │   ├── echarts.js
-│   │   ├── echarts.js.map
-│   │   └── echarts.simple.js.map
+│   │   └── echarts.min.js
 │   └── font-awesome
 │       ├── css
 │       │   ├── font-awesome.css

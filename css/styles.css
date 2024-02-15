@@ -1452,3 +1452,39 @@ li-pubs:before {
     font-size: 28px;
     font-family: 'Lato', sans-serif;
 }
+
+.evas-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.download-area {
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center
+}
+
+.btn-download-os {
+    margin: 24px;
+    background: linear-gradient(to right, #00B4DB, #0083B0);
+    padding: 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    color: white;
+    display: block;
+    line-height: 24px;
+    opacity:0.90;
+    display: inline-block;
+  }
+
+  .btn-download-os:hover {
+    transform: scale(1.05);
+    transition: all .5s;
+    opacity: 1;
+  }

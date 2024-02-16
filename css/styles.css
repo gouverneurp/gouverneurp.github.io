@@ -1466,11 +1466,33 @@ li-pubs:before {
     max-width: 100%;
 }
 
+.evas-logo img {
+    max-width: 2.5cm;
+    width: 100%;
+    float:left;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
 .download-area {
     width:80%;
     margin-left: auto;
     margin-right: auto;
     text-align: center
+}
+
+.download-area .modal-body {
+    color: black;
+    padding: 0
+}
+
+.download-area .modal-content {
+    max-width: 100%;
+}
+
+.tutorial {
+    display: flex;
+    text-align: left;
 }
 
 .btn-download-os {
@@ -1490,4 +1512,17 @@ li-pubs:before {
     transform: scale(1.05);
     transition: all .5s;
     opacity: 1;
+  }
+
+  .btn-download-os a{
+    color: white;
+  }
+
+  .btn-download-os a:hover {
+    text-decoration: none;
+    color: white;
+  }
+
+  .tutorial-img img{
+    max-width: 500px;
   }

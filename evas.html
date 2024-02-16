@@ -45,12 +45,58 @@
     </div>
 
     <div class="download-area">
+
+        <!-- Windows-->
         <a href="https://github.com/gouverneurp/eVAS/releases/latest/download/eVAS.exe">
-            <button class="btn-download-os">
+            <div class="btn-download-os"
+                onclick="modal=document.getElementById('modal_windows');modal.style.display = 'block';">
                 Download for Windows <i class="icon fa fa-windows"></i>
-            </button>
+            </div>
         </a>
 
+        <div id="modal_windows" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <div class="modal-heading">
+                        Windows Download started: Next steps
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="tutorial">
+                            <div class="tutorial-step">
+                                <b>Step 1)</b>
+                                Double click the <b>eVAS</b>.exe
+                                <div class="tutorial-img">
+                                    <img src="./images/projects/evas/evas.webp" alt="eVAS icon" title="eVAS icon"
+                                        loading="lazy">
+                                </div>
+                            </div>
+
+                            <div class="tutorial-step">
+                                <b>Step 2)</b>
+                                Press <i>More info</i>
+                                <div class="tutorial-img">
+                                    <img src="./images/projects/evas/windows_protected_1.webp" alt="eVAS: Helper file"
+                                        title="eVAS: Helper file" loading="lazy">
+                                </div>
+                            </div>
+
+                            <div class="tutorial-step">
+                                <b>Step 3)</b>
+                                Press <i>Run anyway</i>
+                                <div class="tutorial-img">
+                                    <img src="./images/projects/evas/windows_protected_2.webp" alt="eVAS: run anyway"
+                                        title="eVAS: run anyway" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MacOS -->
         <a href="https://github.com/gouverneurp/eVAS/releases/latest/download/eVAS_mac.zip">
             <div class="btn-download-os"
                 onclick="modal=document.getElementById('modal_macos');modal.style.display = 'block';">
@@ -100,6 +146,7 @@
             </div>
         </div>
 
+        <!-- Linux -->
         <a href="https://github.com/gouverneurp/eVAS/releases/latest/download/eVAS_ubuntu">
             <button class="btn-download-os">
                 Download for Ubuntu <i class="icon fa fa-linux"></i>

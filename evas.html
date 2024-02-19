@@ -148,10 +148,53 @@
 
         <!-- Linux -->
         <a href="https://github.com/gouverneurp/eVAS/releases/latest/download/eVAS_ubuntu">
-            <button class="btn-download-os">
+            <div class="btn-download-os"
+                onclick="modal=document.getElementById('modal_ubuntu');modal.style.display = 'block';">
                 Download for Ubuntu <i class="icon fa fa-linux"></i>
-            </button>
+            </div>
         </a>
+
+        <div id="modal_ubuntu" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <div class="modal-heading">
+                        Ubuntu Download started: Next steps
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="tutorial">
+                            <div class="tutorial-step">
+                                <b>Step 1)</b>
+                                Right click the application and select <i>Properties</i>
+                                <div class="tutorial-img">
+                                    <img src="./images/projects/evas/ubuntu_properties.png" alt="eVAS: Ubuntu properties"
+                                        title="eVAS: Ubuntu properties" loading="lazy">
+                                </div>
+                            </div>
+
+                            <div class="tutorial-step">
+                                <b>Step 2)</b>
+                                Select the <i>Permissions</i> tab and tick <i>Allow executing file as program</i>
+                                <div class="tutorial-img">
+                                    <img src="./images/projects/evas/ubuntu_allow.png" alt="eVAS: Ubuntu allow"
+                                        title="eVAS: Ubuntu allow" loading="lazy">
+                                </div>
+                            </div>
+
+                            <div class="tutorial-step">
+                                <b>Step 3)</b>
+                                Start the <b>eVAS</b> (double click it)
+                                <div class="tutorial-img">
+                                    <img src="./images/projects/evas/evas.webp" alt="eVAS icon" title="eVAS icon"
+                                        loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>

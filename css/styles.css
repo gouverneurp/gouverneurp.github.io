@@ -1001,7 +1001,7 @@ footer {
     }
 }
 
-.publication-container{
+.publication-container {
     text-align: justify;
 }
 
@@ -1462,20 +1462,20 @@ li-pubs:before {
     padding-bottom: 40px;
 }
 
-.evas-image img{
+.evas-image img {
     max-width: 100%;
 }
 
 .evas-logo img {
     max-width: 2.5cm;
     width: 100%;
-    float:left;
+    float: left;
     margin-left: auto;
     margin-right: 20px;
 }
 
 .download-area {
-    width:80%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     text-align: center
@@ -1507,33 +1507,33 @@ li-pubs:before {
     font-size: 24px;
     color: white;
     line-height: 24px;
-    opacity:0.90;
+    opacity: 0.90;
     display: inline-block;
-  }
+}
 
-  .btn-download-os:hover {
+.btn-download-os:hover {
     transform: scale(1.05);
     transition: all .5s;
     opacity: 1;
-  }
+}
 
-  .btn-download-os a{
+.btn-download-os a {
     color: white;
-  }
+}
 
-  .btn-download-os a:hover {
+.btn-download-os a:hover {
     text-decoration: none;
     color: white;
-  }
+}
 
-  .tutorial-img img{
+.tutorial-img img {
     max-width: 100%;
     margin-bottom: 35px;
     margin-top: 35px;
-  }
+}
 
-  .tutorial-step {
+.tutorial-step {
     padding-left: 35px;
     padding-top: 35px;
     flex-basis: 550px
-  }
+}

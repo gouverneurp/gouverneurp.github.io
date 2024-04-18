@@ -1542,6 +1542,7 @@ li-pubs:before {
 /* Experience: Steps in the timeline */
 .experience-img img{
     max-width: 5cm;
+    margin-bottom: 15px;
 }
 
 .experience-container {

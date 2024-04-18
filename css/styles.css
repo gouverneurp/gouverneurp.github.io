@@ -1538,3 +1538,21 @@ li-pubs:before {
     padding-top: 35px;
     flex-basis: 550px
 }
+
+/* Experience: Steps in the timeline */
+.experience-img img{
+    max-width: 5cm;
+}
+
+.experience-container {
+    display: grid;
+    align-items: center;
+    column-gap: 20px;
+    grid-auto-flow: column;
+}
+
+@media only screen and (max-width: 480px) {
+    .experience-container {
+        display: block;
+    }
+}

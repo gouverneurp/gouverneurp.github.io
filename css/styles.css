@@ -83,7 +83,8 @@ body {
 .portrait img {
     max-width: 5cm;
     width: 100%;
-    border-radius: 50%
+    border-radius: 50%;
+    pointer-events: none;
 }
 
 body {

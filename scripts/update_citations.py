@@ -1,11 +1,10 @@
-import argparse
 import os
 import sys
+import requests
+import argparse
 import fileinput
 from git import Repo
 from pathlib import Path
-from bs4 import BeautifulSoup
-from urllib.request import Request, urlopen
 
 #-------------------------------------------------------------------------------------------------------
 # File manipulation
@@ -66,30 +65,22 @@ def git_changed(file, repo_path= "."):
     changed = [Path(item.a_path) for item in repo.index.diff(None)]
     return file in changed
 
-def get_citations_googlescholar(user, headers= None):
-    url = f'https://scholar.google.de/citations?user={user}&hl=en'
+def get_citations_googlescholar(user):
+    params = {
+        "engine": "google_scholar_author",
+        "author_id": user,
+        "api_key": os.environ["SERPAPI_KEY"],
+    }
 
-    if headers is None:
-        USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64; rv:27.0) Gecko/20100101 Firefox/27.0'
-        headers = {'User-Agent': USER_AGENT}
-
-    req = Request(url)
-    for header in headers:
-        req.add_header(header, headers[header])
-    response = urlopen(req)
-
-    if response.getcode() != 200:
-        raise ValueError(f"Url request error for url '{url}' with code '{response.reason}'.")
-    
-    content = response.read()
+    res = requests.get("https://serpapi.com/search", params=params)
+    years_citation = res.json()["cited_by"]["graph"]
 
     years = []
     citations = []
-    for tag in BeautifulSoup(content, "html.parser").find_all(class_="gsc_md_hist_w")[0].contents[0].contents:
-        if "gsc_g_t" in tag.attrs["class"]:
-            years.append(tag.text)
-        if "gsc_g_a" in tag.attrs["class"]:
-            citations.append(tag.contents[0].text)
+
+    for i in years_citation:
+        years.append(i["year"])
+        citations.append(i["citations"])
 
     return years, citations
 
@@ -126,8 +117,8 @@ if __name__ == '__main__':
     # transform to needed string
     years.append("Overall")
     years = f"                data/*xaxis*/: {years},\n"
-    overall_citations = sum([int(i) for i in citations])
-    citations = "                data/*yaxis*/: ["+ ", ".join(citations) +", { value: "+ str(overall_citations) +", itemStyle: { color: '#a90000' } },],\n"
+    overall_citations = sum([i for i in citations])
+    citations = "                data/*yaxis*/: ["+ ", ".join([str(i) for i in citations]) +", { value: "+ str(overall_citations) +", itemStyle: { color: '#a90000' } },],\n"
 
     # get old citation count
     years_old, citations_old = get_citations_file(file= script_file)

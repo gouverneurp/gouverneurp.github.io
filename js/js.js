@@ -85,7 +85,7 @@ function createBarChart() {
                 name: 'Citations',
                 type: 'bar',
                 barWidth: '60%',
-                data/*yaxis*/: [1, 7, 9, 20, 37, 81, 87, 115, 23, { value: 380, itemStyle: { color: '#a90000' } },],
+                data/*yaxis*/: [1, 7, 9, 20, 37, 81, 87, 115, 27, { value: 384, itemStyle: { color: '#a90000' } },],
                 itemStyle: {
                     borderRadius: 3,
                     borderWidth: 1,
